@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cafe Bistró</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <link rel="stylesheet" href="cafebistro.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+</head>
+<body>
+    
+ <!-- nav -->  
+ <!-- bstp usod e grid en todo el doc -->
+ <!-- bstp  use la nav light cambiandola a dark y personalizando -->
+ <nav class="navbar navbar-expand-lg navbar-dark bg-dark espacio ">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="index.html"><img class="logo" src="imgcafe/home/logofixed50.jpg" alt=""></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="d-flex justify-content-end ">
+            <div class="collapse navbar-collapse  " id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0 ">
+                    <li class="nav-item">
+                        <a id="home" class="nav-link active" aria-current="page" href="index.html">Cafe <em>Bistró</em></a>
+                    </li>
+                    
+                    <li class="nav-item">
+                        <a class="nav-link" href="nosotros.html">Nosotros</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Ver Mas
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="#cafesdelmundo">Cafés del Mundo</a></li>
+                            <li><a class="dropdown-item" href="#gift">Regale Experiencias</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="nosotros.html">Nuestros Cursos</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contacto.html">Contacto</a>
+                    </li>
+
+                </ul>
+
+            </div>
+
+        </div>
+
+    </div>
+</nav>
+
+
+
+
+<!-- header -->
+<header>
+    <div class="container-fluid espacio">
+        <div class="row">
+            <div class="col-12 col-sm-6 baner-fijo ">
+               
+                <h1 class="entrada" >Cafe <b> <em>Bistró</em> </h1>
+                <!-- <button type="button" class="btn btn-danger"><em>Conozca Más</em> </button> -->
+            </div>
+            <!-- <div class="col-12 col-sm-6">
+                <button type="button" class="btn btn-danger"><em>Conozca Más</em> </button> -->
+            </div>
+        </div>
+    </div>
+</header>
+
+<!--  bstp uso carrusel   le agregue un baner mas y le cambie el mensaje position-->
+<!-- bstp use el flex para centrar -->
+
+
+<div id="carouselExampleIndicators" class="carousel slide espacio" data-bs-ride="carousel">
+   
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
+    </div>
+
+    <div class="carousel-inner">
+    
+        <div class="carousel-item active">
+            <img src="imgcafe/carrusel/carru1.jpg" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block ">
+                <h5>Tenemos los <b>MEJORES GRANOS</b>    de Cafè</h5>
+        
+            </div>
+        </div>
+    
+        <div class="carousel-item">
+            <img src="imgcafe/carrusel/carru2.jpg" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block colorrosa">
+                <h5>Preparamos los <b>MEJORES CAFES</b></h5>
+        
+            </div>
+        </div>
+        <div class="carousel-item">
+            <img src="imgcafe/carrusel/carru3.jpg " class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+                <h5>Tenemos los mejores <B>BRUNCH</B></h5>
+        
+            </div>
+        </div>
+        <div class="carousel-item">
+            <img src="imgcafe/carrusel/carru4.jpg " class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+                <h5>Tenemos <B>WIFI ILIMITADA</B> </h5>
+            </div>
+        </div>
+
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+</div>
+
+
+<!-- bstp uso te cards -->
+
+<main  >
+<!-- tarjetas  -->
+<section id="cafesdelmundo" class="espacio sabores  ">
+    <div class="titulo">
+        <h3> La vuelta al mundo en <B>80 SABORES</B></h3>
+    </div>
+    <div class="container-fluid d-flex justify-content-center">
+        <div class="row  " >
+            <div class="col-12 col-sm-6">
+                <div class="card" style="width: 18rem;">
+                    <img  src="imgcafe/home/colombiano.jpg" class="card-img-top img-fluid" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Colombiano</h5>
+                        <p class="card-text">Caracterizado por sus notas amaderadas y tono suaves</p>
+                        <button type="button" class="btn-danger swing"><a href="contacto.html"> Compre Aquí </a> </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-sm-6">
+                <div class="card" style="width: 18rem;">
+                    <img src="imgcafe/home/mokabean.jpg" class="card-img-top img-fluid" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Africano</h5>
+                        <p class="card-text">Su grano redondo concentra toda la intensidad del café</p>
+                        <button type="button" class="btn btn-danger swing"><a href="contacto.html"> Compre Aquí </a></button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-sm-6">
+                <div class="card" style="width: 18rem;">
+                    <img src="imgcafe/home/brasil.jpg" class="card-img-top img-fluid" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Brasilero</h5>
+                        <p class="card-text">Cafe tostado de tono medio que potencia los sabores frutales</p>
+                        <button type="button" class="btn btn-danger swing"><a href="contacto.html"> Compre Aquí </a></button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-sm-6">
+                <div class="card" style="width: 18rem;">
+                    <img src="imgcafe/home/sabotizados.jpg" class="card-img-top img-fluid" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Saborizados</h5>
+                        <p class="card-text">Mas de 60 saborizantes para tu cafe faforito </p>
+                        <button type="button" class="btn-danger swing"><a href="contacto.html"> Compre Aquí </a></button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+    <button class="boton "> <a href="#home">Volver</a> </button>
+</section>
+ 
+</main>
+
+
+
+
+<!-- baner mobil -->
+
+<!-- gift card -->
+<section id="gift" class="espacio  seccion-gift " >
+    <div class="container-fluid ">
+        <div class="row d-flex justify-content-around">
+            <div class="col-12  col-sm-6 cont-tj-gift">
+                <img class="img-fluid tj-gift" src="imgcafe/home/gc2.png" alt="">
+                <button type="button" class="btn btn-danger swing"><a href="contacto.html"> Compre Aquí </a> </button>
+            </div>
+            <div class="col 12  col-sm-6 ">
+                <div class="texto ">
+                     <h2 >Regale Experiencias</h2>
+                     <p>Nuestras Gift <em>Card</em> permiten compartir todos nuestros sabores con quien mas quieras. <br> Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero cumque iusto culpa accusamus dolor, iure soluta nesciunt error beatae nisi distinctio deleniti tempora molestias? Recusandae architecto eveniet dolores. Dolorum, repellendus?</p>
+                </div>
+           
+            </div>
+        </div>
+    </div>
+    <button class="boton "> <a href="#home">Volver</a> </button>
+</section>
+
+
+  
+
+<!-- footer -->
+<footer>
+    
+    <p> Realizado por FBWeb &copy</p>
+  </footer>
+
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+</body>
+</html>

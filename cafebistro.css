@@ -1,0 +1,261 @@
+
+
+body{
+    margin: 0;
+    padding: 0;
+    background-image: url(imgcafe/home/bggreen.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    color: rgb(221, 185, 139);
+    font-family: 'Roboto', sans-serif;
+ 
+}
+
+footer{
+    background-color: rgba(0, 0, 0, 0.432);
+    text-align: center;
+    color: rgba(240, 233, 235, 0.493);
+    font-weight: 200;
+}
+/* logo ...................................... */
+.logo{
+    border-radius: 50%;
+    margin-left: 50px;
+}
+.espacio{
+    margin-bottom: 5% ;
+    margin-top: 5%;
+}
+
+/*  nav bar desde bstp ........................................*/
+.navbar-dark {
+    background-color: #8a11397a !important;
+}
+.dropdown-item{
+    color: #8a1139fb;
+}
+.dropdown-item:hover{
+    background-color:#8a11397a ;
+    color:azure  ;
+    font-weight: bold;
+    color: #3a0416;
+    
+}
+
+/* botones ........................................ */
+.boton{
+    width: max-content;
+    background-color: #3a0416;
+    color: rgb(221, 185, 139);
+    border: none;
+    border-radius: 5px;
+    padding: 5px 20px;
+    margin: 30px;
+    font-size: 0.9em;
+    position: relative;
+    left: 80%;
+    box-shadow: black 5px 5px 5px ;
+    
+}
+.boton a{
+    list-style: none;
+    text-decoration: none;
+    color: rgb(221, 185, 139);
+
+}
+.boton:hover{
+  box-shadow: #c9a833 5px 5px 5px;
+  cursor: pointer;  
+  font-size: 1rem;
+  transition: all 400ms ease;
+}
+
+/* bstp use la base del boton danger */
+.btn-danger {
+    width: max-content;
+    color: #fff;
+    background-color: #3a0416;
+    border-color: #dc3545;
+    border: none;
+    box-shadow: black 5px 5px 5px;
+    margin-top: 30px;
+    border-radius: 5px;
+    padding: 5px;
+}
+.btn-danger a{
+    list-style: none;
+    text-decoration: none;
+    color: azure;
+}
+
+
+
+
+/* header ............................. */
+
+.baner-fijo{
+    box-shadow: black 5px 5px 5px;
+    width: 100%;
+    height: 300px;
+   
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;    
+
+    background-color: rgba(0, 0, 0, 0.541);
+    background-blend-mode: darken;
+
+
+  /* usando flex manual */  
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.baner-fijo h1{
+    color: rgb(214, 157, 13);
+}
+
+/*  animacion del header ................................. */
+.entrada {
+    width: 80px;
+    height: 80px;
+    animation-name: MiAnimacionentrada;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+        }
+    
+@keyframes MiAnimacionentrada {
+    from {
+            font-size:0%;
+            margin-left:100%;
+    }
+    50% {
+            font-size:400%;
+    }
+    to {
+            font-size:400%;
+            margin-left:20%;
+    }
+}
+    /* carrusel.................................. */
+    .carousel-caption {
+        position: absolute;
+        left: 60%;
+        bottom: 2rem;
+        width: max-content;
+        border-radius: 30px;
+        padding: 1.25rem;
+        color: rgb(221, 185, 139);
+        text-align: center;
+        background-color: rgba(0, 0, 0, 0.685);
+      }
+
+/* tarjetas card ................................ */
+.sabores{
+    /* border: crimson solid; */
+    background-color: rgba(0, 0, 0, 0.342);
+}
+.sabores h3{
+    text-align: center;
+    padding: 20px;
+}
+.card {
+    background-color: #3a041680;;
+    color: #ffff;
+    border-radius: .25rem;
+    text-align: center;
+    margin: 30px auto;
+}
+.card:hover img{
+    box-shadow: 5px 5px 10px  #db8f1498;
+    border-radius: 20px;
+}
+.card:hover{
+    border-radius: 20px;
+    cursor: pointer;
+    box-shadow: 5px 5px 10px  #db8f1498;
+    transition: all 400ms ease-out;
+}
+.card:hover h5 {
+    color:gold; 
+}
+.card-body{
+   margin-top: 10px;
+}
+
+/* gift card ........................*/
+.texto{
+    text-align: justify;
+    margin-top: 20%;
+    font-size: 1.2em ;
+}
+.cont-tj-gift{
+    padding:2em 1em 1em 1em;               
+    width: max-content;    
+    transition: all 300ms ease-out;
+    display: flex;  
+    flex-direction: column;    
+}
+
+/* transicion de la tarjeta */
+.cont-tj-gift img{
+    transition: all 400ms ease-out;
+}
+.cont-tj-gift:hover {
+    
+    border-radius: 10px;
+    cursor: pointer;
+    box-shadow: 5px 5px 10px  #db8f1498;
+  }
+
+.cont-tj-gift:hover img{
+        border-radius: 30px;
+        transform: scale(1.1);  
+} 
+
+/* animaciones  de botones ...................................... */
+  
+  @keyframes swing
+    {
+        15% { transform: translateX(5px); background-color: rgb(199, 23, 23) ; }
+        30% { transform: translateX(-5px); }
+        50% { transform: translateX(3px); }
+        65% { transform: translateX(-3px); }
+        80% { transform: translateX(2px); }
+        100% { transform: translateX(0); }
+    }
+    
+    .swing:hover
+    {
+      animation: swing 1s ease;
+      animation-iteration-count: 5;
+    }
+
+
+/* nosotros  tarjeta de promocion  */
+.card-b{
+    /* border: solid blue; */
+    position: relative;
+}
+.card-b h3{
+    background-color: red;
+    color:white;
+    width: max-content;
+    padding: 0 5px;
+    border-radius: 0 5px;
+    position: absolute;
+    top:10%
+}
+
+
+/* desde bstp                               */
+.formulario{
+    background-color: rgba(0, 0, 0, 0.315);
+    margin: auto;
+    width: 90%;
+    border: solid rgba(0, 255, 255, 0.438);
+    padding: 20px;
+}
